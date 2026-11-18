@@ -193,7 +193,7 @@
 ;[mytrunk]
 ;type=registration
 ;transport=transport-udp
-;outbound_auth=mytrunk_auth
+;outbound_auth=****
 ;server_uri=sip:sip.example.com
 ;client_uri=sip:1234567890@sip.example.com
 ;contact_user=1234567890
@@ -246,7 +246,7 @@
 ;context=from-external
 ;disallow=all
 ;allow=ulaw
-;outbound_auth=mytrunk_auth
+;outbound_auth=****
 ;aors=mytrunk
 ;                   ;A few NAT relevant options that may come in handy.
 ;force_rport=yes    ;It's a good idea to read the configuration help for each
@@ -557,7 +557,7 @@
 
 ;[1000]
 ;type=endpoint
-;outbound_auth=1000-auth
+;outbound_auth=****
 ;callerid=My Name <8005551212>
 ;transport=transport-udp-nat
 
@@ -586,7 +586,7 @@
 
 ;MAC=deadbeef4dad               ;added by pp1000
 ;USERNAME=myname                ;automatically added by 1000-auth username
-;SECRET=mysecret                ;automatically added by 1000-auth password
+;SECRET=******               ;automatically added by 1000-auth password
 ;PROFILE=someprofile            ;added by defaults
 ;SERVER=myserver.example.com    ;added by defaults
 ;SERVER_PORT=5060               ;added by defaults
@@ -1645,7 +1645,7 @@ rtp_symmetric=yes
 [auth1001]
 type=auth
 auth_type=userpass
-username=1001
+username=****
 password=****
 
 [1001]
@@ -1675,7 +1675,7 @@ rtp_symmetric=yes
 [auth1002]
 type=auth
 auth_type=userpass
-username=1002
+username=****
 password=****
 
 [1002]
@@ -1706,7 +1706,7 @@ transport=transport-udp
 context=from-provider
 disallow=all
 allow=alaw,ulaw
-outbound_auth=provider-auth
+outbound_auth=****
 aors=provider-aor
 direct_media=no
 force_rport=yes
@@ -1726,7 +1726,7 @@ match=202.53.163.27
 [provider-registration]
 type=registration
 transport=transport-udp
-outbound_auth=provider-auth
+outbound_auth=****
 
 server_uri=sip:202.53.163.27:5060
 client_uri=sip:09606747474@202.53.163.27
