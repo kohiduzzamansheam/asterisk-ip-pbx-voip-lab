@@ -931,18 +931,18 @@ exten => s,1,NoOp(BD Police Main IVR)
  same => n,WaitExten(7)
  same => n,Hangup()
 
-; Option 1 - Superintendent of Police
-exten => 1,1,NoOp(SP - Sending caller to SP queue)
+; Option 1 - Superintendent 
+exten => 1,1,NoOp(Sp - Sending caller to SP queue)
  same => n,Queue(sp-queue,t)
  same => n,Hangup()
 
-; Option 2 - Assistant Superintendent of Police
-exten => 2,1,NoOp(ASP - Sending caller to ASP queue)
+; Option 2 - Assistant Superintendent 
+exten => 2,1,NoOp(kSP - Sending caller to ASP queue)
  same => n,Queue(asp-queue,t)
  same => n,Hangup()
 
 ; Option 0 - Officer-in-Charge
-exten => 0,1,NoOp(OC - Officer-in-Charge)
+exten => 0,1,NoOp( Officer-in-Charge)
  same => n,Queue(sp-queue & asp-queue,30)
  same => n,Hangup()
 
